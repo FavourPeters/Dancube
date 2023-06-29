@@ -708,6 +708,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:grid {
     display: grid;
   }
@@ -718,5 +722,17 @@ video {
 
   .md\:place-content-center {
     place-content: center;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:inline-block {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .xl\:inline-block {
+    display: inline-block;
   }
 }
