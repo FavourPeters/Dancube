@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="sign-in w-full h-screen grid place-content-center">
+        <div class="relative bg-slate-400 w-72 h-72 p-5 rounded-md">
+            <img src="images/logo.svg" alt="" width="35" class="absolute right-32 -top-2 ">
+            <p class="text-center text-lg">Sign In</p>
+            <form action="">
+                <div class="my-3 w-full">
+                    <label for="email">Email:</label> <br>
+                    <input type="email" name="email" id="" class="text-sm p-1 w-full" placeholder="Enter your Email">
+                </div>
+                <div class="my-3">
+                    <label for="password">Password:</label> <br>
+                    <input type="password" name="password" id="" class="w-full text-sm p-1" placeholder="Enter your password">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-700 text-white px-6 py-1 rounded-lg">Submit</button>
+                </div>
+            </form>
+            <p class="text-sm text-center">Dont have an account? <a href="#" class="sign-up_btn">Sign Up</a></p>
+        </div>
+
+        <!-- Sign up -->
+        <div class="sign-up hidden relative bg-slate-400 w-72 h-fit p-5 rounded-md">
+            <img src="images/logo.svg" alt="" width="35" class="absolute right-32 -top-2 ">
+            <p class="text-center text-lg">Sign Up</p>
+            <form action="">
+                <div class="my-3 w-full">
+                    <label for="email">Email:</label> <br>
+                    <input type="email" name="email" id="" class="text-sm p-1 w-full" placeholder="Enter your Email">
+                </div>
+                <div class="my-3 w-full">
+                    <label for="phone">Phone:</label> <br>
+                    <input type="number" name="phone" id="" class="text-sm p-1 w-full" placeholder="Enter your Phone Number">
+                </div>
+
+                <div class="my-3">
+                    <label for="password">Password:</label> <br>
+                    <input type="password" name="password" id="" class="w-full text-sm p-1" placeholder="Enter your password">
+                </div>
+                <div class="my-3">
+                    <label for="c-password">Password:</label> <br>
+                    <input type="password" name="c-password" id="" class="w-full text-sm p-1" placeholder="Confirm password">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-700 text-white px-6 py-1 rounded-lg">Submit</button>
+                </div>
+            </form>
+            <p class="text-sm text-center">Already have an account? <a href="#" class="sign-in_btn">Sign In</a></p>
+        </div>
+    </div>
+
+
+    <script src="register.js"></script>
+</body>
+</html>
